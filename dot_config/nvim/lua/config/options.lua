@@ -6,12 +6,12 @@ vim.g.have_nerd_font = true
 vim.g.clipboard = {
   name = "WslClipboard",
   copy = {
-    ["+"] = { "/mnt/c/Windows/System32/clip.exe" },
-    ["*"] = { "/mnt/c/Windows/System32/clip.exe" },
+    ["+"] = "/mnt/c/Users/000/scoop/shims/win32yank.exe -i --crlf",
+    ["*"] = "/mnt/c/Users/000/scoop/shims/win32yank.exe -i --crlf",
   },
   paste = {
-    ["+"] = '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-    ["*"] = '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    ["+"] = "/mnt/c/Users/000/scoop/shims/win32yank.exe -o --lf",
+    ["*"] = "/mnt/c/Users/000/scoop/shims/win32yank.exe -o --lf",
   },
   cache_enabled = 0,
 }

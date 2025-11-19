@@ -29,7 +29,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "poimandresish",
     },
   },
   {
@@ -45,11 +45,11 @@ return {
     },
   },
   {
-    "leoydt/poimandres.nvim",
+    "webhooked/poimandresish.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("poimandres").setup({
+      require("poimandresish").setup({
         -- leave this setup function empty for default config
         -- or refer to the configuration section
         -- for configuration options
